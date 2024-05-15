@@ -1,20 +1,24 @@
 {
-	"name": "darwin-rick-morty",
-	"private": true,
-	"version": "0.0.0",
-	"type": "module",
-	"scripts": {
-		"dev": "vite",
-		"build": "vue-tsc && vite build",
-		"preview": "vite preview"
-	},
-	"dependencies": {
-		"vue": "3.4.27"
-	},
-	"devDependencies": {
-		"@vitejs/plugin-vue": "5.0.4",
-		"typescript": "5.4.5",
-		"vite": "5.2.41",
-		"vue-tsc": "2.0.18"
-	}
+  "name": "darwin-rick-morty",
+  "type": "module",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc && vite build",
+    "preview": "vite preview",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "dependencies": {
+    "vue": "3.4.27"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "2.18.0",
+    "@vitejs/plugin-vue": "5.0.4",
+    "eslint": "9.2.0",
+    "typescript": "5.4.5",
+    "vite": "5.2.11",
+    "vue-tsc": "2.0.18"
+  }
 }
