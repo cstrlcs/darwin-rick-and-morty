@@ -9,3 +9,8 @@ export interface Paginated<T> {
   info: PaginatedInfo
   results: T[]
 }
+
+export interface FetchableParams {
+  page: string
+  name: string
+}

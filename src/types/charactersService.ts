@@ -1,12 +1,14 @@
-export interface GetCharactersParams {
-  name: string
+import type { FetchableParams } from '@/types/defaultProvider'
+
+export interface GetCharactersParams extends FetchableParams {
   status: ChraracterStatus
   species: string
   type: string
   gender: CharacterGender
 }
 
-enum ChraracterStatus {
+export enum ChraracterStatus {
+  None = 'None',
   Alive = 'Alive',
   Dead = 'Dead',
   Unknown = 'unknown',

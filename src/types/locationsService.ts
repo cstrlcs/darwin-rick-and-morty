@@ -1,5 +1,6 @@
-export interface GetLocationsParams {
-  name: string
+import type { FetchableParams } from '@/types/defaultProvider'
+
+export interface GetLocationsParams extends FetchableParams {
   type: string
   dimension: string
 }

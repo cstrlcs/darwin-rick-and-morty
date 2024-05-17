@@ -1,5 +1,6 @@
-export interface GetEpisodesParams {
-  name: string
+import type { FetchableParams } from '@/types/defaultProvider'
+
+export interface GetEpisodesParams extends FetchableParams {
   episode: string
 }
 
