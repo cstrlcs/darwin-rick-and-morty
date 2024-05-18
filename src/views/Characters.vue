@@ -7,7 +7,7 @@ import List from '@/components/list/List.vue'
 import Input from '@/components/ui/Input.vue'
 import Select from '@/components/ui/Select.vue'
 
-import { ChraracterStatus } from '@/types/charactersService'
+import { CharacterStatus } from '@/types/charactersService'
 import { formatCharacter } from '@/utils/formatters'
 
 const options = [
@@ -18,12 +18,12 @@ const options = [
 ]
 
 const name = ref('')
-const status = ref(ChraracterStatus.None)
+const status = ref(CharacterStatus.None)
 
 const computedParams = computed(() => {
   return {
     name: name.value.trim(),
-    status: status.value === ChraracterStatus.None ? undefined : status.value,
+    status: status.value === CharacterStatus.None ? undefined : status.value,
   }
 })
 </script>

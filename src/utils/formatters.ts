@@ -1,9 +1,9 @@
 import type { Props as ListItemProps } from '@/components/list/ListItem.vue'
-import type { Character, ChraracterStatus } from '@/types/charactersService'
+import type { Character, CharacterStatus } from '@/types/charactersService'
 import type { Episode } from '@/types/episodesService'
 import type { Location } from '@/types/locationsService'
 
-function getCharacterVariant(status: ChraracterStatus) {
+function getCharacterVariant(status: CharacterStatus) {
   return {
     Alive: 'success',
     Dead: 'danger',

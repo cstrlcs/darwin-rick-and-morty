@@ -1,13 +1,13 @@
 import type { FetchableParams } from '@/types/defaultProvider'
 
 export interface GetCharactersParams extends FetchableParams {
-  status: ChraracterStatus
+  status: CharacterStatus
   species: string
   type: string
   gender: CharacterGender
 }
 
-export enum ChraracterStatus {
+export enum CharacterStatus {
   None = 'None',
   Alive = 'Alive',
   Dead = 'Dead',
@@ -29,7 +29,7 @@ interface CharacterLocationReference {
 export interface Character {
   id: number
   name: string
-  status: ChraracterStatus
+  status: CharacterStatus
   species: string
   type: string
   gender: CharacterGender
