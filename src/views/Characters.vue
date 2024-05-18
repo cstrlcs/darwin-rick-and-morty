@@ -23,7 +23,7 @@ const status = ref(ChraracterStatus.None)
 const computedParams = computed(() => {
   return {
     name: name.value.trim(),
-    status: status.value === ChraracterStatus.None ? '' : status.value,
+    status: status.value === ChraracterStatus.None ? undefined : status.value,
   }
 })
 </script>
