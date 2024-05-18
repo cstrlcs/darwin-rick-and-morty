@@ -3,7 +3,10 @@ import Pagination from './Pagination.vue'
 describe('<Pagination />', () => {
   it('renders', () => {
     cy.mount(Pagination, {
-      props: { items: 10, total: 100 },
+      props: {
+        itemsPerPage: 10,
+        total: 100,
+      },
     })
 
     cy.get('nav').should('exist')
@@ -12,7 +15,7 @@ describe('<Pagination />', () => {
 
   it('emits a page event', () => {
     cy.mount(Pagination, {
-      props: { items: 10, total: 100 },
+      props: { itemsPerPage: 10, total: 100 },
     })
 
     cy.get('button').eq(0).should('be.disabled')
@@ -23,7 +26,7 @@ describe('<Pagination />', () => {
 
   it('updates the model', () => {
     cy.mount(Pagination, {
-      props: { items: 10, total: 100, modelValue: 2 },
+      props: { itemsPerPage: 10, total: 100, modelValue: 2 },
     })
 
     cy.get('button').eq(2).invoke('attr', 'aria-current').should('equal', 'page')
