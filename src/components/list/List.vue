@@ -1,4 +1,21 @@
 <script lang="ts" setup generic="T extends FetchableParams, U">
+/**
+ * A ideia deste componente é que ele seja um componente de listagem genérica.
+ * O endpoint (service) chamado é passado através de uma prop (fetchable).
+ * E o resultado dessa chamada é formatada para um padrão de lista através de outra prop (formatter).
+ *
+ * Os benefícios de se ter um componente genérico são:
+ *  1. Reutilização de código:
+ *  - As 3 telas (Personagens, Locais e Episódios) usam exatamente o mesmo componente,
+ *   mudando apenas o endpoint e a formatação dos dados.
+ *    Graças ao uso de genéricos do Vue 3.3, a tipagem continua forte e podemos identificar
+ *   problemas emm cada uma das telas.
+ *
+ * 2. Flexibilidade
+ * - Apesar de termos um componente genérico para as 3 telas, as telas ainda são separadas
+ *   e podemos acrescentar comportamentos específicos para cada uma delas.
+ *    Um exemplo é a tela de Personagens que tem um filtro de status.
+ */
 import { computed, ref, watch } from 'vue'
 
 import ListItem, { type Props as ListItemProps } from '@/components/list/ListItem.vue'
