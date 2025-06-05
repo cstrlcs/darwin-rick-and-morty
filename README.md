@@ -1,8 +1,8 @@
-# Darwin's Rick & Morty API
+# Rick & Morty API
 
 # Introdução
 
-Este projeto foi desenvolvido com o intuito de consumir a API do Rick & Morty e exibir os personagens em uma lista, com a possibilidade de filtrar por nome e status. Faz parte do desafio técnico da Darwin.
+Este projeto foi desenvolvido com o intuito de consumir a API do Rick & Morty e exibir os personagens em uma lista, com a possibilidade de filtrar por nome e status.
 
 # Preview
 
@@ -16,7 +16,6 @@ https://darwin-rick-and-morty.vercel.app/
 - Cypress
 - Radix Vue
 - TailwindCSS
-- Rivotril
 
 # Setup
 
@@ -25,10 +24,6 @@ pnpm i
 pnpm dev
 pnpx cypress open
 ```
-
-# Explicações
-
-Estou escrevendo uma breve explicação sobre o projeto, mas explico com mais detalhes no vídeo que irei anexar ao e-mail.
 
 ### Styling e componentes
 
